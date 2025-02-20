@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Page</title>
+  <link rel="stylesheet" href="events.css">
+  <link href="https://unpkg.com/lucide-icons/dist/umd/lucide.css" rel="stylesheet">
+</head>
+<body>
+  <div class="min-h-screen bg-white">
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="Gallary.html" >Gallery</a>
+      <a href="Events.html" class="active">Events</a>
+      <a href="#">Store</a>
+      <a href="Feedback.html">Feedback</a>
+    </nav>
+    <div class="hero">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1>Photography Masterclass 2025</h1>
+          <p class="subtitle">Capture Moments, Create Memories</p>
+          <div class="event-meta">
+            <span>
+              <i data-lucide="calendar"></i>
+              Febuary 01-10, 2025
+            </span>
+            <span>
+              <i data-lucide="map-pin"></i>
+              Ghaziabad , UP
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="event-details">
+        <div class="overview">
+          <h2>Event Overview</h2>
+          <p>
+            Join us for an immersive three-day photography masterclass where you'll learn from industry experts,
+            network with fellow photographers, and enhance your skills through hands-on workshops.
+          </p>
+          <div class="info-list">
+            <div class="info-item">
+              <i data-lucide="clock"></i>
+              <div>
+                <h3>Duration</h3>
+                <p>3 Days, 9:00 AM - 5:00 PM</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i data-lucide="users"></i>
+              <div>
+                <h3>Participants</h3>
+                <p>Limited to 50 attendees</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i data-lucide="camera"></i>
+              <div>
+                <h3>Equipment</h3>
+                <p>Bring your own camera and laptop</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="registration-form">
+          <h2>Register Now</h2>
+          <form>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="FullName">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="abc@example.com">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" placeholder="+91 00000-00000">
+            </div>
+            <div class="form-group">
+              <label for="experience">Experience Level</label>
+              <select id="experience">
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+                <option>Professional</option>
+              </select>
+            </div>
+            <button type="submit">Reserve Your Spot</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="featured-section">
+      <div class="container">
+        <h2>Featured Photography</h2>
+        <div class="photo-grid">
+          <img src="img/desert.avif" alt="Desert photography">
+          <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&q=80" alt="Portrait photography">
+          <img src="img/urban city" alt="Urban photography">
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+          <a href="mailto:info@photomasterclass.com">
+            <i data-lucide="mail"></i>
+           xyz@gmail.com
+          </a>
+          <a href="tel:+15550000000">
+            <i data-lucide="phone"></i>
+            +91 00000-00000
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

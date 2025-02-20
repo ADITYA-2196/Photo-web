@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+
+.main_box {
+background-image: url("img/photo.jpg");
+height: 100vh;
+width: 100vw;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed; 
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.navbar-brand {
+    font-family: "Mystery Quest", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.custom-login-btn {
+    align-self: center;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+    height: 80vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111;
+    overflow: hidden;
+}
+
+.carousel {  
+    left: -20%;
+    position:absolute;
+    width: 300px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 30s infinite linear; 
+}
+ 
+.carousel img {
+    
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,0));
+}
+
+/* Positioning images in a circular layout */
+.carousel img:nth-child(1) { transform: rotateY(0deg) translateZ(400px); }
+.carousel img:nth-child(2) { transform: rotateY(60deg) translateZ(400px); }
+.carousel img:nth-child(3) { transform: rotateY(120deg) translateZ(400px); }
+.carousel img:nth-child(4) { transform: rotateY(180deg) translateZ(400px); }
+.carousel img:nth-child(5) { transform: rotateY(240deg) translateZ(400px); }
+.carousel img:nth-child(6) { transform: rotateY(300deg) translateZ(400px); }
+
+/* Rotation Animation */
+@keyframes rotate {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
+
+/* Navbar styling */
+
+.carousel img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px rgba(186, 185, 185, 0.5);
+}
